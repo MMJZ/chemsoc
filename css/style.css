@@ -1,0 +1,199 @@
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  /*  color: white;*/
+  font-size: 100%;
+  background: #e8e8ee;
+}
+
+header {
+  width: 100%;
+}
+
+header div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+header img {
+  transition: 0.3s ease-in-out;
+  height: 3.5em;
+  margin: 0 20px;
+}
+
+header h1 {
+  font-size: 3em;
+  font-weight: 100;
+  padding: 0;
+  margin: 0;
+}
+
+header nav {
+  width: 0px;
+  overflow: hidden;
+  transition: 0.3s ease-in-out;
+}
+
+header nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: 100;
+  font-size: 2em;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+header div:hover img {
+  /*  transform: rotate(-57deg);*/
+  transform: rotate(302deg);
+  /*  margin-right: 30px */
+}
+
+header div:hover nav {
+  width: 100px;
+  text-align: right;
+}
+
+.splash {
+  background: red;
+}
+
+.splash h1 {
+  font-weight: 100;
+  text-align: center;
+  font-size: 3em;
+}
+
+.splash img {
+  min-width: 300px;
+  width: 50%;
+  max-width: 700px;
+  margin: auto 0 auto auto;
+  display: block;
+  opacity: 0.7;
+  height: auto;
+}
+
+
+/* ------------ */
+
+
+section {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+section p {
+  margin: 20px;
+  font-weight: 300;
+  font-size: 1.3em;
+}
+
+.spread {
+  display: flex;
+  justify-content: center;
+}
+
+.spread div {
+  text-align: center;
+  min-width: 300px;
+  flex: 1;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.spread div:not(:last-child) {
+  border-right: 1px solid white;
+}
+
+
+/* committee */
+
+.committee div {
+  background: blue;
+  display: inline-block;
+  text-align: center;
+}
+
+.committee img {
+  border: 1px solid white;
+  border-radius: 30px;
+  margin-bottom: 10px;
+}
+
+
+/* --------------- */
+
+
+/* forms */
+
+input {
+  padding: 10px;
+  font-size: 1em;
+  font-weight: inherit;
+  outline: none;
+  display: block;
+  margin: 15px auto;
+  border-radius: 5px;
+  background: white;
+  transition: all 0.2s ease-in-out;
+  width: 80%;
+  max-width: 500px;
+  border: 1px solid transparent;
+}
+
+input:focus,
+input:hover {
+  border: 1px solid rgba(0,0,0,0.3);
+}
+
+input::placeholder {
+  font-weight: 100;
+  color: rgba(0, 0, 0, 0.5);
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  background: white;
+  border-radius: 5px;
+  color: black;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  outline: none;
+  margin-top: 15px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+}
+
+button:hover {
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+  text-decoration: underline;
+}
+
+button:active {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3) inset;
+}
+
+select {
+  font-size: 1em;
+  margin: 10px 0 5px 0;
+}
+
+
+
+footer {
+  background: black;
+}
