@@ -52,7 +52,7 @@
             <h3>4<sup>th</sup> October - Nigel Davies</h3>
             <p>adshiuadshiuasdhiuadsiuh dahiuadshiud dhiu d hd hdh dh iudhu duh dhu dhu dhu dhu dhu dhu ihuhui dsaihu iuh diuh iuh das</p>
           </li>
-          <a class="button" href="/">term card</a>
+          <a class="button" href="/">term card<!--<div id="asd"></div> --></a>
         </ul>
       </section>
       <section id="about">
@@ -110,7 +110,7 @@
     </content-holder>
   </footer>
   <script>
-    for (let x of document.getElementsByClassName("email")) {
+    for (let x of Array.from(document.getElementsByClassName("email"))) {
       x.href = "mailto:" + x.innerHTML;
     }
   </script>
