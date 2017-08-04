@@ -6,138 +6,65 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  /*  color: white;*/
   font-size: 100%;
   background: #e8e8ee;
 }
 
 header {
-  width: 100%;
-}
-
-header div {
+  padding: 20px 0 10px 0;
+  margin-bottom: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 40px 0;
+/*  background: rgba(255,255,255,0.7);*/
+/*  border-bottom: 1px solid rgba(0,0,0,0.5);*/
 }
 
-header img {
+header>img {
   transition: 0.3s ease-in-out;
   height: 3.5em;
   margin: 0 20px;
 }
 
-header h1 {
+header>h1 {
   font-size: 3em;
-  font-weight: 100;
-  padding: 0;
-  margin: 0;
+  font-weight: 700;
 }
 
-header nav {
-  width: 0px;
-  overflow: hidden;
+header>a{
+  display: block;
   transition: 0.3s ease-in-out;
-}
-
-header nav a {
+  width: 0px;
+  overflow-x: hidden;
+  font-size: 1.5em;
   text-decoration: none;
   color: black;
-  font-weight: 100;
-  font-size: 2em;
 }
 
-header nav a:hover {
+header>a:hover {
   text-decoration: underline;
 }
 
-header div:hover img {
-  /*  transform: rotate(-57deg);*/
+header:hover img {
   transform: rotate(302deg);
-  /*  margin-right: 30px */
 }
 
-header div:hover nav {
-  width: 100px;
+header:hover a {
+  width: 62px;
   text-align: right;
 }
 
-.splash {
-  background: red;
-}
-
-.splash h1 {
-  font-weight: 100;
-  text-align: center;
-  font-size: 3em;
-}
-
-.splash img {
-  min-width: 300px;
-  width: 50%;
+main {
   max-width: 700px;
-  margin: auto 0 auto auto;
-  display: block;
-  opacity: 0.7;
-  height: auto;
-}
-
-
-/* ------------ */
-
-
-section {
-  max-width: 900px;
-  margin: 20px auto;
-  padding: 20px;
-  box-sizing: border-box;
+  margin: 0 auto;
   text-align: center;
+  padding: 0 10px;
 }
 
-section p {
-  margin: 20px;
-  font-weight: 300;
-  font-size: 1.3em;
+main>p {
+  padding: 20px 0;
+  font-size: 1.1em;
 }
-
-.spread {
-  display: flex;
-  justify-content: center;
-}
-
-.spread div {
-  text-align: center;
-  min-width: 300px;
-  flex: 1;
-  padding: 10px;
-  box-sizing: border-box;
-}
-
-.spread div:not(:last-child) {
-  border-right: 1px solid white;
-}
-
-
-/* committee */
-
-.committee div {
-  background: blue;
-  display: inline-block;
-  text-align: center;
-}
-
-.committee img {
-  border: 1px solid white;
-  border-radius: 30px;
-  margin-bottom: 10px;
-}
-
-
-/* --------------- */
-
-
-/* forms */
 
 input {
   padding: 10px;
@@ -190,10 +117,5 @@ button:active {
 select {
   font-size: 1em;
   margin: 10px 0 5px 0;
-}
-
-
-
-footer {
-  background: black;
+  outline: none;
 }

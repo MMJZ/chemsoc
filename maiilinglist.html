@@ -21,36 +21,29 @@
   <meta name="author" content="Michael Agius">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>OUCS Newsletter</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/formpage.css">
 </head>
 
 <body>
 
   <header>
-    <div>
-      <nav><a href="/">home</a></nav>
-      <img src="img/oucsbob.png">
-      <h1>Get our Newsletter</h1>
-    </div>
+    <a href="/">home</a>
+    <img src="img/oucsbob.png">
+    <h1>Join OUCS</h1>
   </header>
 
-  <section>
-    
+  <main>
     <p>Membership for one year costs £10, and membership for life costs £20. There is an extra £1 charged for the transaction fee. For more payments options, contact the treasurer.</p>
-    
-    
     <div>
-        <form method="POST" autocomplete="off" action="https://formspree.io/fwelfare@michaelagius.uk">
-          <input autocomplete="off" type="text" name="email" placeholder="email" required>
-          <input type="text" name="_gotcha" style="display:none" />
-          <input type="hidden" name="_subject" value="Welfare request" />
-          <input type="hidden" name="_next" value="//hertfordjcr.github.io/formsent">
-          <button class="mbutton" type="submit">join our mailing list</button>
-        </form>
-      </div>
-
-
-  </section>
+      <form method="POST" autocomplete="off" action="https://formspree.io/fwelfare@michaelagius.uk">
+        <input autocomplete="off" type="text" name="email" placeholder="email" required>
+        <input type="text" name="_gotcha" style="display:none" />
+        <input type="hidden" name="_subject" value="Welfare request" />
+        <input type="hidden" name="_next" value="//hertfordjcr.github.io/formsent">
+        <button class="mbutton" type="submit">join our mailing list</button>
+      </form>
+    </div>
+  </main>
 
 </body>
 

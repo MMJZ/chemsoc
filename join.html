@@ -13,38 +13,35 @@
   <meta name="msapplication-config" content="/favs/browserconfig.xml">
   <meta name="theme-color" content="#ffffff">
 
-  <link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700" rel="stylesheet">
   <meta name="description" content="For Oxford Chemsoc">
   <meta name="keywords" content="oxford,chemistry,society,university,student,chemsoc,oucs">
   <meta name="author" content="Michael Agius">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>OUCS Membership</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/formpage.css">
 </head>
 
 <body>
 
   <header>
-    <div>
-      <nav><a href="/">home</a></nav>
-      <img src="img/oucsbob.png">
-      <h1>Join OUCS</h1>
-    </div>
+    <a href="/">home</a>
+    <img src="img/oucsbob.png">
+    <h1>Join OUCS</h1>
   </header>
 
-  <section>
-    
-    <p>Membership for one year costs £10, and membership for life costs £20. There is an extra £1 charged for the transaction fee. For more payments options, contact the treasurer.</p>
-    
-    
+  <main>
+
+    <p>Membership for one year costs £10, and membership for life costs £20. There is an extra £1 charged for the transaction fee. For more payment options, contact the treasurer.</p>
+
     <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
       <input type="hidden" name="cmd" value="_s-xclick">
       <input type="hidden" name="hosted_button_id" value="JMW39G3DYAGF4">
       <input type="hidden" name="on0" value="Type">
       <select name="os0">
-            <option value="One Year">One Year £10.00 GBP</option>
-            <option value="Lifetime">Lifetime £20.00 GBP</option>
-          </select>
+        <option value="One Year">One Year £10.00 GBP</option>
+        <option value="Lifetime">Lifetime £20.00 GBP</option>
+      </select>
       <input type="hidden" name="on1" value="Name">
       <input type="text" name="os1" maxlength="200" placeholder="name" required>
       <input type="hidden" name="on2" value="College">
@@ -53,7 +50,7 @@
       <button type="submit">Pay with PayPal</button>
     </form>
 
-  </section>
+  </main>
 
 </body>
 
