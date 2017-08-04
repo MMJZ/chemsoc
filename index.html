@@ -20,12 +20,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>OUCS</title>
   <link rel="stylesheet" href="css/main.css">
-  <!--  <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.4.1/velocity.min.js"></script>-->
-  <!--  <script src="https://cdnjs.cloudflare.com/ajax/libs/svg.js/2.5.1/svg.min.js"></script>-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.4.1/velocity.min.js"></script>
 </head>
 
 <body>
-  <header>
+  <header onclick="quickScroll()">
     <title-box>
       <h1>OUCS</h1>
       <nav>
@@ -113,6 +112,19 @@
     for (let x of Array.from(document.getElementsByClassName("email"))) {
       x.href = "mailto:" + x.innerHTML;
     }
+
+    document.getElementsByTagName("title-box")[0].addEventListener('click', function(e) {
+      e.stopPropagation();
+    });
+
+    function quickScroll() {
+      Velocity(document.getElementsByTagName('main'), "scroll", {
+        duration: 400,
+        easing: "ease",
+        offset: "-50px",
+      });
+    }
+
   </script>
 </body>
 
