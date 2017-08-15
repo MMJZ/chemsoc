@@ -3,7 +3,6 @@
 
 <head>
   <meta charset="UTF-8">
-
   <link rel="apple-touch-icon" sizes="180x180" href="/favs/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favs/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favs/favicon-16x16.png">
@@ -12,7 +11,6 @@
   <link rel="shortcut icon" href="/favs/favicon.ico">
   <meta name="msapplication-config" content="/favs/browserconfig.xml">
   <meta name="theme-color" content="#ffffff">
-
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700" rel="stylesheet">
   <meta name="description" content="For Oxford Chemsoc">
   <meta name="keywords" content="oxford,chemistry,society,university,student,chemsoc,oucs">
@@ -23,36 +21,23 @@
 </head>
 
 <body class="formpage">
-
-  <!--
-  <header>
-    <a href="/">home</a>
-    <img src="img/oucsbob.png">
-    <h1>Join OUCS</h1>
-  </header>
--->
-
   <blur-holder>
     <main>
       <content-holder>
         <section>
           <h2>Join OUCS</h2>
-          <p>Membership for one year costs £10, and membership for life costs £20. There is an extra £1 charged for the transaction fee. For more payment options, contact the treasurer.</p>
+          <p>Membership is for life and costs £20, paid through PayPal. For more payment options, contact the treasurer.</p>
           <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
             <input type="hidden" name="cmd" value="_s-xclick">
-            <input type="hidden" name="hosted_button_id" value="JMW39G3DYAGF4">
-            <input type="hidden" name="on0" value="Type">
-            <select name="os0">
-            <option value="One Year">One Year £10.00 GBP</option>
-            <option value="Lifetime">Lifetime £20.00 GBP</option>
-          </select>
-            <input type="hidden" name="on1" value="Name">
-            <input type="text" name="os1" maxlength="200" placeholder="name" required>
-            <input type="hidden" name="on2" value="College">
-            <input type="text" name="os2" maxlength="200" placeholder="email" required>
-            <input type="hidden" name="currency_code" value="GBP">
+            <input type="hidden" name="hosted_button_id" value="PWPYP6XT868JG">
+            <input type="hidden" name="on0" value="Full Name">
+            <input type="text" placeholder="full name" name="os0" maxlength="200">
+            <input type="hidden" name="on1" value="Email">
+            <input type="text" placeholder="email" name="os1" maxlength="200">
             <button class="button" type="submit">Pay with PayPal</button>
           </form>
+
+
         </section>
       </content-holder>
     </main>

@@ -37,9 +37,9 @@
     </title-box>
   </header>
 
-  <blur-holder>
-    <main>
-      <content-holder>
+  <main>
+    <content-holder>
+      <blur-holder>
         <section id="events">
 
           <h2>Next Events</h2>
@@ -55,6 +55,8 @@
             <a class="button" href="/">term card<!--<div id="asd"></div> --></a>
           </ul>
         </section>
+      </blur-holder>
+      <blur-holder>
         <section id="about">
           <h2>About</h2>
           <p>The Oxford University Chemistry Society is one of the largest societies in the University, now boasting a membership of several hundred students studying a wide range of subjects. We are dedicated to enhancing the student experience of our members, hosting a range of interesting speakers who are experts in their respective fields. We also run extremely popular socials to give a chance for students to enjoy themselves and mix with people from throughout the university.</p>
@@ -62,33 +64,66 @@
           <a class="button" href="join">become a member</a>
           <a class="button" href="https://facebook.com/OxfordChemistrySociety/">like us on facebook</a>
         </section>
+      </blur-holder>
+      <blur-holder>
         <section id="committee">
           <h2>Committee</h2>
           <ul>
             <li>
               <img src="img/com/anna.png">
-              <h4>Anna Broughton</h4>
+              <h4>Izzy Gaffney</h4>
               <h5>President</h5>
               <a class="email" href="#">d@ouchemsoc.co.uk</a>
             </li>
-
             <li>
               <img src="img/com/anna.png">
-              <h4>Anna Broughton</h4>
-              <h5>President</h5>
+              <h4>Ivan Paul</h4>
+              <h5>Vice President</h5>
               <a class="email" href="#">d@ouchemsoc.co.uk</a>
             </li>
-
+            <li>
+              <img src="img/com/anna.png">
+              <h4>Andrew Boczek</h4>
+              <h5>Secretary</h5>
+              <a class="email" href="#">d@ouchemsoc.co.uk</a>
+            </li>
+            <li>
+              <img src="img/com/adam.jpg">
+              <h4>Adam Mellul</h4>
+              <h5>Treasurer</h5>
+              <a class="email" href="#">d@ouchemsoc.co.uk</a>
+            </li>
             <li>
               <img src="img/com/anna.png">
               <h4>Anna Broughton</h4>
-              <h5>President</h5>
+              <h5>Biochemistry Rep</h5>
+              <a class="email" href="#">d@ouchemsoc.co.uk</a>
+            </li>
+            <li>
+              <img src="img/com/anna.png">
+              <h4>Nicky O'Donoghue</h4>
+              <h5>Social Secretary</h5>
+              <a class="email" href="#">d@ouchemsoc.co.uk</a>
+            </li>
+            <li>
+              <img src="img/com/charlotte.jpg">
+              <h4>Charlotte Greenhalgh</h4>
+              <h5>Events Officer</h5>
+              <a class="email" href="#">d@ouchemsoc.co.uk</a>
+            </li>
+            <li>
+              <img src="img/com/mick.jpg">
+              <h4>Michael Agius</h4>
+              <h5>IT Officer</h5>
               <a class="email" href="#">d@ouchemsoc.co.uk</a>
             </li>
           </ul>
         </section>
-      </content-holder>
-    </main>
+      </blur-holder>
+    </content-holder>
+  </main>
+  <blur-holder>
+
     <footer>
       <content-holder>
         <credit-box>
@@ -120,7 +155,7 @@
       x.href = "mailto:" + x.innerHTML;
     }
 
-    document.getElementsByTagName("title-box")[0].getElementsByTagName("ul").addEventListener('click', function(e) {
+    document.getElementsByTagName("title-box")[0].getElementsByTagName("ul")[0].addEventListener('click', function(e) {
       e.stopPropagation();
     });
 

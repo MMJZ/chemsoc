@@ -14,34 +14,7 @@ body {
   background-repeat: repeat;
   background-position: top -250px left -250px;
   min-height: 100vh;
-}
-
-.formpage {
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.formpage content-holder {
-  max-width: 900px;
-}
-
-.formpage main {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
-.formpage blur-holder {
-  
-  border-radius: 2px;
-  overflow: hidden;
-}
-
-.formpage section {
-  padding: 40px 0;
-  margin: 0;
+  font-weight: 300;
 }
 
 content-holder {
@@ -62,40 +35,24 @@ flex-spacer {
 
 .button {
   background-color: rgba(0, 168, 236, 0.7);
-  border-radius: 50px;
+  border-radius: 5px;
   color: white;
   text-decoration: none;
-  padding: 10px 20px;
-  font-size: 1.1em;
+  padding: 7px 15px;
   -webkit-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   outline: none;
-  font-weight: 300;
   display: inline-block;
-  margin-top: 10px;
-  margin-right: 20px;
+  margin-top: 5px;
+  margin-right: 10px;
   border: 1px solid transparent;
   cursor: pointer;
 }
 
-
-/*
-#asd {
-  float: right;
-  margin-top: 10px;
-  background: rgba(220,220,255, 0.9);
-  margin-left: 15px;
-  width: 17px;
-  height: 7px;
-  border-top-left-radius: 1000px;
-  border-bottom-left-radius: 1000px;
-}
-*/
-
 .button:hover {
-  text-decoration: underline;
   border: 1px solid rgba(0, 0, 0, 0.3);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.2);
 }
 
 .button:active {
@@ -223,6 +180,33 @@ nav a:hover {
 
 /* main */
 
+.formpage {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.formpage content-holder {
+  max-width: 800px;
+}
+
+.formpage main {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.formpage blur-holder {
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.formpage section {
+  padding: 40px 0;
+  margin: 0;
+}
+
 blur-holder {
   display: block;
   background: url(../img/oucsbobsopblur.png);
@@ -231,35 +215,32 @@ blur-holder {
   background-size: 500px;
   background-repeat: repeat;
   background-position: top -250px left -250px;
+  border-radius: 5px;
 }
 
 main {
-    background: rgba(255, 255, 255, 0.6);
-  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-  padding: 30px 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 100%;
-  /*  -webkit-backdrop-filter: blur(15px);*/
 }
 
 section {
-  margin: 70px 0;
-  padding-top: 30px;
+  margin-bottom: 100px;
+  padding: 20px;
+  border-radius: 5px;
   font-size: 1.1em;
+  background: rgba(255,255,255,0.7);
 }
 
 section>h2 {
   font-size: 2em;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 section>p {
-  margin-bottom: 15px;
+  margin: 5px 0;
   font-size: 1.1em;
-  font-weight: 400;
-  line-height: 1.5em;
+  line-height: 1.6em;
 }
 
 @media only screen and (max-width: 800px) {
@@ -283,7 +264,7 @@ section>p {
 }
 
 #events li>h3 {
-  font-weight: 600;
+  font-weight: 400;
   margin-bottom: 5px;
 }
 
@@ -316,20 +297,22 @@ section>p {
 #committee>ul>li>img {
   height: 100px;
   float: left;
-  border-radius: 10px;
+  border-radius: 8px;
   margin-right: 10px;
-  -webkit-box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.3);
-  box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.3);
+/*  -webkit-box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.3);*/
+/*  box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.3);*/
+  border: 1px solid rgba(255,255,255,0.1);
+  box-sizing: border-box;
 }
 
 #committee>ul>li>h4 {
   font-weight: 400;
-  font-size: 1.5em;
+  font-size: 1.3em;
 }
 
 #committee>ul>li>h5 {
-  font-weight: 400;
-  font-size: 1.2em;
+  font-weight: 300;
+  font-size: 1.1em;
 }
 
 #committee>ul>li>a {
@@ -358,41 +341,18 @@ section>p {
 }
 
 
-/* full spread */
-
-full-spread {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-full-spread>main {
-  padding: 30px 0;
-  text-align: center;
-}
-
-full-spread>main>content-holder {
-  max-width: 900px;
-}
-
-full-spread>main section {
-  margin: 0;
-  padding: 0;
-}
-
-full-spread .button {
-  margin-right: 0;
-}
-
-
 /* footer */
 
 footer {
+  margin-top: 80px;
   background: rgba(0, 34, 47, 0.7);
+/*  background: rgba(0,17,24,0.7);*/
   color: white;
-  padding: 80px 0 40px 0;
+  padding: 20px 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 }
 
 footer>content-holder {
@@ -402,11 +362,10 @@ footer>content-holder {
 }
 
 credit-box>p {
-  font-weight: 300;
 }
 
 credit-box>img {
-  width: 130px;
+  width: 100px;
   margin-bottom: -15px;
 }
 
@@ -423,7 +382,7 @@ sponsors-box>div {
 sponsors-box h4 {
   font-size: 1.6em;
   margin-bottom: 10px;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 sponsors-box ul>li {
