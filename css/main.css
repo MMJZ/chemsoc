@@ -75,6 +75,12 @@ button {
   }
 }
 
+@media only screen and (max-width: 500px) {
+  body {
+    font-size: 80%;
+  }
+}
+
 select {
   font-size: 1em;
   margin: 10px 0 5px 0;
@@ -493,5 +499,16 @@ footer .button:hover {
   }
   sponsors-box li {
     padding: 5px 0;
+  }
+}
+
+@media only screen and (max-width: 500px){
+  sponsors-box {
+    display: block;
+  }
+  
+  sponsors-box img {
+    height: 120px;
+/*    display: none;*/
   }
 }
