@@ -1,0 +1,94 @@
+.formpage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+form-holder {
+  max-width: 600px;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+form-holder>h2 {
+  margin: 5px 0;
+}
+
+form-holder>p {
+  margin: 10px 0;
+}
+
+form-holder>a:hover {
+  text-decoration: underline;
+}
+
+button {
+  font-size: inherit;
+  padding: 5px 15px;
+  background: white;
+  border-radius: 5px;
+  border: 1px solid rgba(0,0,0,0.3);
+  cursor: pointer;
+  outline: none;
+  font-size: 1.1em;
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  background: rgb(100,200,255);
+  color: white;
+}
+button:active {
+  box-shadow: 0 0 5px rgba(0,0,0,0.3) inset;
+}
+
+select {
+  font-size: inherit;
+  margin: 10px 0 25px 0;
+  outline: none;
+}
+
+input {
+  padding: 10px;
+  font-size: inherit;
+  font-weight: inherit;
+  outline: none;
+  display: block;
+  margin: 10px 0;
+  border-radius: 5px;
+  background: white;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  width: 90%;
+  max-width: 500px;
+}
+
+input:focus,
+input:hover {
+/*  border: 1px solid rgba(0, 84, 118, 0.9);*/
+  border: 1px solid rgba(0,0,0,0.9);
+}
+
+input::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.5);
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.5);
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input::-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.5);
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,205 @@
+
+
+      <nav>
+        <ul>
+          <li><a class="button" href="#events">Events</a></li>
+          <li><a class="button" href="#about">About</a></li>
+          <li><a class="button" href="#committee">Committee</a></li>
+        </ul>
+      </nav>
+
+
+<!--              <path transform="scale(0.1,-0.1) translate(0,-1536) " d="M155.5 823q-69.5 71 -69.5 209v406q0 15 8.5 23.5t22.5 8.5t22.5 -8.5t8.5 -23.5v-413q0 -218 212 -218q105 0 158.5 55t53.5 163v413q0 14 8.5 23t22.5 9t22 -8.5t8 -23.5v-406q0 -138 -69.5 -209t-203.5 -71q-135 0 -204.5 71z" />-->
+
+
+horiz-adv-x="724" 
+
+
+
+      <!--
+      <h1 id="utest">
+        O<div id="canvas"><svg class="superu" width="70px" height="80px" version="1.1" xmlns="http://www.w3.org/2000/svg">
+            <path transform="scale(0.1,-0.1) translate(0,-1536)" transform="rotate(0 0 180)" d="M155.5 823q-69.5 71 -69.5 209v406q0 15 8.5 23.5t22.5 8.5t22.5 -8.5t8.5 -23.5v-413q0 -218 212 -218q105 0 158.5 55t53.5 163v413q0 14 8.5 23t22.5 9t22 -8.5t8 -23.5v-406q0 -138 -69.5 -209t-203.5 -71q-135 0 -204.5 71z" />
+        </svg></div>CB
+      </h1>
+-->
+
+      <!--
+      <h1 id="utest">
+        O
+        <div id="newlogo">
+          <div id="beaker">
+            <div id="air">
+              <div id="bubble1" class="bubble"></div>
+              <div id="bubble2" class="bubble"></div>
+              <div id="bubble3" class="bubble"></div>
+              <div id="bubble4" class="bubble"></div>
+            </div>
+            <div id="liquid"></div>
+          </div>
+        </div>CB
+      </h1>
+-->
+
+
+
+
+
+
+
+
+
+
+#air {
+  height: 50%;
+  box-sizing: content-box;
+  position: relative;
+  padding: 0 20px;
+}
+
+
+
+
+
+
+
+
+.bubble {
+  height: 30px;
+  width: 30px;
+  border: 3px solid #eee;
+  box-sizing: content-box;
+  border-radius: 100%;
+}
+
+#bubble1 {
+  background-image: linear-gradient(to top, #0fd850 0%, #f9f047 100%);
+  float: left;
+  margin-top: 80px;
+}
+
+#bubble2 {
+  float: right;
+  margin-top: 50px;
+  background-image: linear-gradient(to top, #0fd850 0%, #f9f047 100%);
+}
+
+#bubble3 {
+  float: right;
+  margin-top: 0;
+  background-image: linear-gradient(to top, #0fd850 0%, #f9f047 100%);
+}
+
+#bubble4 {
+  float: right;
+  border: none;
+  margin-top: 110px;
+  background-image: linear-gradient(to top, #0fd850 0%, #f9f047 100%);
+}
+
+#liquid {
+  height: 60%;
+  background-image: linear-gradient(to top, #007adf 0%, #00ecbc 100%);
+  bottom: 0;
+  margin: 0 auto 5px auto;
+  box-sizing: content-box;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+
+
+
+
+
+/*
+section {
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  background-image: linear-gradient(150deg, #c3cfe2 0%, transparent 40%, transparent 100%);  overflow: hidden;
+}
+*/
+
+links-box {
+  float: left;
+  padding-right: 20px;
+}
+links-box>.button {
+  display: block;
+  margin-bottom: 10px;
+}
+
+
+
+#committee>ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: auto;
+/*  margin-top: 10px;*/
+  margin: 10px auto 0 auto;
+  max-width: 1000px;
+}
+
+#committee>ul>li:nth-child(-n+2) {
+  background: red;
+}
+
+#committee>ul>li {
+  list-style-type: none;
+  margin: 5px 0;
+}
+
+
+#committee>ul>li>img {
+  height: 80px;
+  float: left;
+  border-radius: 5px;
+  margin-right: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#committee ul>li::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+
+
+<!--          <ellipse cx="35%" cy="50%" rx="13%" ry="11.14%"/>    -->
+<!--          <ellipse cx="40%" cy="10%" rx="9%" ry="7.7%"/>-->
+<!--          <ellipse cx="65%" cy="30%" rx="11%" ry="9.42%"/>-->
+          
+
+<!--                <path opacity="0.5" d="M0 30 V15 Q30 3 60 15 V30z" />-->
+<!--                <path d="M0 30 V12 Q30 17 55 12 T100 11 V30z" />-->
+
+
+
+
+
+        
+<!--
+        <g id="letter">
+           80 -10 564 723
+          <svg viewBox="80 -10 564 1323" preserveAspectRatio="none">
+            <path transform="scale(1 -1) translate(0 -702)" fill="rgb(78, 90, 109)" d="M153 64q-71 72 -71 212v392q0 19 11 30.5t30 11.5q18 0 29 -11.5t11 -30.5v-399q0 -103 50.5 -155t148.5 -52t148 52t50 155v399q0 19 11.5 30.5t29.5 11.5q19 0 30 -11.5t11 -30.5v-392q0 -139 -71.5 -211.5t-208.5 -72.5q-138 0 -209 72z" />
+            <path transform="scale(1 -1) translate(0 -1302)" fill="rgba(0,0,0,1)" d="M155.5 63q-69.5 71 -69.5 209v406q0 15 8.5 23.5t22.5 8.5t22.5 -8.5t8.5 -23.5v-413q0 -218 212 -218q105 0 158.5 55t53.5 163v413q0 14 8.5 23t22.5 9t22 -8.5t8 -23.5v-406q0 -138 -69.5 -209t-203.5 -71q-135 0 -204.5 71z" />
+            <path transform="scale(1 -1) translate(0 -702)" fill="black" d="M155.5 63q-69.5 71 -69.5 209v433h62v-440q0 -218 212 -218q105 0 158.5 55t53.5 163v440h61v-433q0 -138 -69.5 -209t-203.5 -71q-135 0 -204.5 71z" />
+          </svg>
+        </g>
+        -->
+
+
+
+
+
+
+
+
+
+
+
