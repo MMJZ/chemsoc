@@ -1,0 +1,11 @@
+title-box {
+  min-height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+title-box h1 {
+  font-size: 6em;
+  font-weight: 300;
+}

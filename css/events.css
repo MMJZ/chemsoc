@@ -1,0 +1,172 @@
+body {
+  background-image: url(../img/parpat2.png);
+  background-size: 200px;
+}
+
+header {
+/*  display: none;*/
+}
+
+next-event {
+  margin-top: 150px;
+/*  background: #778;*/
+  background-image: url(../img/parpat2.png);
+  background-color: #555;
+  background-size: 150px;
+  background-position: center;
+/*  box-shadow: 0 0px 2px rgba(0,0,0,0.4);*/
+  
+  box-shadow: 0 0 10px 10px #555 inset;
+
+  
+/*  display: none;*/
+}
+
+
+main {
+/*  background: rgba(255,255,255,0.7);*/
+  box-shadow: 0 0 40px 40px #eee;
+  padding: 20px 0px 20px 0px !important;
+  margin-top: 50px;
+  display: block;
+}
+
+next-event>h2 {
+  margin: 40px 0;
+  font-size: 2em;
+  text-align: center;
+  color: white;
+}
+
+next-event>div {
+  max-width: 1100px;
+  margin: 40px auto;
+}
+
+main>h2 {
+/*  font-size: 2em;*/
+/*  margin-bottom: 20px;*/
+  
+/*  display: none;*/
+  
+  font-size: 3em;
+  margin-bottom: 50px;
+  text-align: center;
+  
+}
+
+main {
+  padding-top: 50px;
+}
+
+#events>li {
+  margin-bottom: 30px;
+}
+
+#events>li,
+next-event>div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  
+}
+
+date-box {
+  padding: 5px 5px 10px 5px;
+  text-align: center;
+  background: rgb(93, 156, 193);
+  border-top: 10px solid rgb(63, 109, 147);
+  border-radius: 2px 2px 5px 5px;
+  color: white;
+  min-width: 7em;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+}
+
+date-box>p {
+  font-size: 1.3em;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 300;
+}
+
+.social>date-box {
+  background: rgb(72, 175, 106);
+  border-top: 10px solid rgb(44, 127, 71);
+}
+
+event-deets {
+  padding: 10px;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(93, 156, 193, 0.3)), to(transparent));
+  background-image: -webkit-linear-gradient(left, rgba(93, 156, 193, 0.3), transparent);
+  background-image: -o-linear-gradient(left, rgba(93, 156, 193, 0.3), transparent);
+  background-image: linear-gradient(to right, rgba(93, 156, 193, 0.3), transparent);
+  border-radius: 2px 5px 5px 5px;
+  color: #222;
+  margin-left: 10px;
+  border-left: 5px solid rgb(153, 202, 232);
+  flex: 2;
+  
+}
+
+event-deets>h3::before {
+  content: "SPEAKER";
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+  font-size: 1em;
+  font-weight: 300;
+}
+
+.social>event-deets {
+/*  background: rgb(242, 191, 140);*/
+  background: rgb(168, 221, 185);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+/*  border-left: 5px solid rgb(232, 202, 153);*/
+  border-left: 5px solid rgb(146, 211, 165);
+}
+
+.social>event-deets>h3::before {
+  content: "SOCIAL";
+}
+
+event-deets>img {
+  float: right;
+  max-height: 200px;
+  border-radius: 2px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+  margin-left: 10px;
+}
+
+event-deets>p {
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 550px) {
+  #events>li {
+    display: list-item;
+    clear: both;
+/*    margin-top: 50px;*/
+  }
+  date-box {
+    display: block;
+    padding: 5px 0;
+    border-radius: 2px 5px;
+    background: rgba(93, 156, 193, 0.8);
+    border-top-width: 7px;
+  }
+  date-box>p {
+    display: inline-block;
+    margin: 0 5px;
+  }
+  event-deets {
+    display: block;
+  }
+  event-deets>img {
+    max-height: 150px;
+  }
+}

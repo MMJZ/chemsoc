@@ -20,28 +20,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>OUCS Membership</title>
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/form.css">
 </head>
 
-<body class="formpage">
-  <main>
-    <content-holder>
-      <blur-holder>
-        <section>
-          <h2>Join our mailing list</h2>
-          <p>Join to receive details of upcoming speaker events and the latest socials.</p>
-          <form method="POST" autocomplete="off" action="https://formspree.io/oucsmaillist@michaelagius.uk">
-            <input autocomplete="off" type="text" name="full name" placeholder="full name" required>
-            <input autocomplete="off" type="text" name="college" placeholder="college" required>
-            <input autocomplete="off" type="text" name="email" placeholder="email" required>
-            <input type="text" name="_gotcha" style="display:none" />
-            <input type="hidden" name="_subject" value="Mailist List Chemsoc" />
-            <input type="hidden" name="_next" value="//mmjz.github.io/chemsoc/success">
-            <button class="button" type="submit">join our mailing list</button>
-          </form>
-        </section>
-      </blur-holder>
-    </content-holder>
-  </main>
+<body>
+  <form-holder>
+    <a href="/">⟨⟨ back</a>
+    <h2>Join our mailing list</h2>
+    <p>Join to receive details of upcoming speaker events and the latest socials.</p>
+    <form method="POST" autocomplete="off" action="https://formspree.io/oucsmaillist@michaelagius.uk">
+      <input autocomplete="off" type="text" name="full name" placeholder="full name" required>
+      <input autocomplete="off" type="text" name="college" placeholder="college" required>
+      <input autocomplete="off" type="text" name="email" placeholder="email" required>
+      <input type="text" name="_gotcha" style="display:none" />
+      <input type="hidden" name="_subject" value="Mailist List Chemsoc" />
+      <input type="hidden" name="_next" value="//mmjz.github.io/chemsoc/success">
+      <button class="button" type="submit">join our mailing list</button>
+    </form>
+  </form-holder>
 
 </body>
 

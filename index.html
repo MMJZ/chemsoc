@@ -13,169 +13,204 @@
   <meta name="msapplication-config" content="/favs/browserconfig.xml">
   <meta name="theme-color" content="#ffffff">
 
-  <link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700" rel="stylesheet">
+  <!--  <link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700" rel="stylesheet">-->
+  <link href="https://fonts.googleapis.com/css?family=Nunito:300,700|Raleway" rel="stylesheet">
+
   <meta name="description" content="For Oxford Chemsoc">
   <meta name="keywords" content="oxford,chemistry,society,university,student,chemsoc,oucs">
   <meta name="author" content="Michael Agius">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>OUCS</title>
+  <title>OUCB</title>
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/index.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.4.1/velocity.min.js"></script>
 </head>
 
 <body>
-  <header onclick="quickScroll()">
-    <title-box>
-      <h1>OUCS</h1>
-      <nav>
-        <ul>
-          <li><a href="#events">Events</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#committee">Committee</a></li>
-        </ul>
-      </nav>
-    </title-box>
+  <header>
+
+    <h1 class="hideheader">O<svg class="newlogo">
+        <defs>
+          <filter id="goo">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur" />
+            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+            <feBlend in="SourceGraphic" in2="goo" />
+          </filter>
+          <linearGradient id="g1" x1="50%" x2="50%" y1="0%" y2="100%" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="rgba(253, 252, 71, 0)"/>
+            <stop offset="30%" stop-color="#FDFC47"/>
+            <stop offset="60%" stop-color="#00f260"/>
+            <stop offset="100%" stop-color="#0575e6"/>
+          </linearGradient>
+        </defs>
+        <g id="group" filter="url(#goo)" fill="url(#g1)">
+          <ellipse class="bubbleanimation" cx="65%"/>
+          <ellipse class="bubbleanimation" cx="35%"/> 
+          <ellipse class="bubbleanimation" cx="57%"/>
+          <rect x="15%" y="68%" width="70%" height="22%"/>
+          <rect x="25%" y="85%" width="50%" height="11%"/>
+        </g>
+        <text x="50%" y="99.4%" fill="#111" text-anchor="middle">U</text>
+      </svg>CB</h1>
+
+    <nav>
+      <ul>
+        <li><a href="events">Events</a></li>
+        <li><a href="committee">Committee</a></li>
+<!--        <li><a href="sponsors">Sponsors</a></li>-->
+      </ul>
+    </nav>
   </header>
 
+  <title-box onclick="quickScroll()">
+    <div>
+      <h1>O<svg class="newlogo">
+        <defs>
+          <filter id="goo2">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur" />
+            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+            <feBlend in="SourceGraphic" in2="goo2" />
+          </filter>
+          <linearGradient id="g12" x1="50%" x2="50%" y1="0%" y2="100%" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="rgba(253, 252, 71, 0)"/>
+            <stop offset="30%" stop-color="#FDFC47"/>
+            <stop offset="60%" stop-color="#00f260"/>
+            <stop offset="100%" stop-color="#0575e6"/>
+          </linearGradient>
+        </defs>
+        <g id="group" filter="url(#goo2)" fill="url(#g12)">
+          <ellipse class="bubbleanimation" cx="65%"/>
+          <ellipse class="bubbleanimation" cx="35%"/> 
+          <ellipse class="bubbleanimation" cx="57%"/>
+          <rect x="15%" y="68%" width="70%" height="22%"/>
+          <rect x="25%" y="85%" width="50%" height="11%"/>
+        </g>
+        <text x="50%" y="99.4%" fill="#111" text-anchor="middle">U</text>
+      </svg>CB</h1>
+
+      <h2>Oxford University Chemistry and Biochemistry Society</h2>
+<!--            <a id="quicklink" href="#">dinner sign-up</a>-->
+
+      <links-box>
+        <a href="mailinglist">
+          <img src="img/gr/icontact.png">join the mailing list
+        </a>
+        <a href="join">
+          <img src="img/gr/ijoin.png">become a member
+        </a>
+<!--
+        <a href="#">
+          <img src="img/gr/isponsors.png">sponsorship info
+        </a>
+-->
+        <a href="events">
+          <img src="img/gr/ievents.png">see our events
+        </a>
+        <a href="https://facebook.com/OxfordChemistrySociety/">
+          <img src="img/gr/iabout.png">like us on facebook
+        </a>
+      </links-box>
+    </div>
+
+
+  </title-box>
+
+
   <main>
-    <blur-holder>
-      <section id="events" class="darkglass">
-        <content-holder>
-          <h2>Events HT18 <span class="tinyaddendum">(so far)</span></h2>
-          <ul>
-
-            <li>
-              <h3>24<sup>th</sup> January, 7pm</h3>
-              <h5>Steve Liddle / Uranium: the Dr Jekykll and Mr Hyde of the Periodic Table</h5>
-              <p>Okinaga Classroom, Wadham College</p>
-            </li>
-            <li>
-              <h3>8<sup>th</sup> February, 7pm</h3>
-              <h5>Phil Stevenson / Chemical Ecology</h5>
-              <p>Okinaga Classroom, Wadham College</p>
-            </li>
-            <li>
-              <h3>28<sup>th</sup> February, 7pm</h3>
-              <h5><a class="addunder" href="dinnersignup">Annual ChemSoc Formal Dinner</a></h5>
-              <p>Magnam Praetorium, Hertford College</p>
-            </li>
-            <!--            <a class="button" href="/">term card<div id="asd"></div> </a>-->
-          </ul>
-        </content-holder>
+    <about-deets>
+      <section>
+        <h2>The New OUCB</h2>
+        <p>The Oxford University Chemistry and Biochemistry Society is one of the largest societies in the University, now boasting a membership of several hundred students studying a wide range of subjects. We are dedicated to enhancing the student experience of our members, hosting a range of interesting speakers who are experts in their respective fields. We also run extremely popular socials to give a chance for students to enjoy themselves and mix with people from throughout the university.</p>
       </section>
-    </blur-holder>
-    <content-holder>
-      <blur-holder>
-        <section id="about">
-          <h2>About</h2>
-          <p>The Oxford University Chemistry Society is one of the largest societies in the University, now boasting a membership of several hundred students studying a wide range of subjects. We are dedicated to enhancing the student experience of our members, hosting a range of interesting speakers who are experts in their respective fields. We also run extremely popular socials to give a chance for students to enjoy themselves and mix with people from throughout the university.</p>
-          <a class="button" href="mailinglist">join the mailing list</a>
-          <a class="button" href="join">become a member</a>
-          <a class="button" href="https://facebook.com/OxfordChemistrySociety/">like us on facebook</a>
-        </section>
-      </blur-holder>
-      <blur-holder>
-        <section id="committee">
-          <h2>Committee 2017</h2>
-          <ul>
-            <li>
-              <img src="img/com/izzy.jpg">
-              <h4>Izzy Gaffney</h4>
-              <h5>President</h5>
-              <a class="email" href="#">isabelle.gaffney@wadham.ox.ac.uk</a>
-            </li>
-            <li>
-              <img src="img/com/ivan.jpg">
-              <h4>Ivan Paul</h4>
-              <h5>Vice President</h5>
-              <a class="email" href="#">ivan.paul@univ.ox.ac.uk</a>
-            </li>
-            <li>
-              <img src="img/com/andrew.jpg">
-              <h4>Andrew Boczek</h4>
-              <h5>Secretary</h5>
-              <a class="email" href="#">andrew.boczek@hertford.ox.ac.uk</a>
-            </li>
-            <li>
-              <img src="img/com/adam.jpg">
-              <h4>Adam Mellul</h4>
-              <h5>Treasurer</h5>
-              <a class="email" href="#">adam.mellul@lmh.ox.ac.uk</a>
-            </li>
-            <li>
-              <img src="img/com/anna.png">
-              <h4>Anna Broughton</h4>
-              <h5>Biochemistry Rep</h5>
-              <a class="email" href="#">anna.broughton@trinity.ox.ac.uk</a>
-            </li>
-            <li>
-              <img src="img/com/nicky.jpg">
-              <h4>Nicky O'Donoghue</h4>
-              <h5>Social Secretary</h5>
-              <a class="email" href="#">nicholas.odonoghue@wadham.ox.ac.uk</a>
-            </li>
-            <li>
-              <img src="img/com/charlotte.jpg">
-              <h4>Charlotte Greenhalgh</h4>
-              <h5>Events Officer</h5>
-              <a class="email" href="#">charlotte.greenhalgh@lmh.ox.ac.uk</a>
-            </li>
-            <li>
-              <img src="img/com/mick.jpg">
-              <h4>Michael Agius</h4>
-              <h5>IT Officer</h5>
-              <a class="email" href="#">michael.agius@cs.ox.ac.uk</a>
-            </li>
-          </ul>
-        </section>
-      </blur-holder>
-    </content-holder>
+<!--
+      <section>
+        <h2>Advice</h2>
+        <p>Something Emma's doing I think aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+      </section>
+-->
+    </about-deets>
   </main>
-  <blur-holder>
 
-    <footer>
-      <content-holder>
-        <credit-box>
-          <img src="img/logo.png">
-          <p>OUCS</p>
-          <p>MA 2017</p>
-        </credit-box>
-        <sponsors-box>
-          <div>
-            <div>
-              <h4>Our Sponsor</h4>
-              <ul>
-                <li><a href="http://www.bp.com/en/global/corporate/careers/students-and-graduates.html">Graduate recruitment main page</a></li>
-                <li><a href="http://www.bp.com/en/global/corporate/careers/students-and-graduates/graduate-locations/united-kingdom-students-and-graduates/degree-matcher.html">Degree matcher</a></li>
-                <li><a href="http://www.bp.com/en/global/corporate/careers/students-and-graduates/graduate-locations/united-kingdom-students-and-graduates/application-process.html">Information about the graduate application process</a></li>
-                <li><a href="http://www.bp.com/en/global/corporate/careers/students-and-graduates/graduate-locations/united-kingdom-students-and-graduates/interns.html">Information on internships</a></li>
-                <li><a href="https://www.facebook.com/bpcareers">Facebook page</a></li>
-              </ul>
-            </div>
-            <a href="http://www.bp.com/"><img src="img/bp.png" alt="bp"></a>
-          </div>
-          <a class="button" href="#">Sponsorship information</a>
-        </sponsors-box>
-      </content-holder>
-    </footer>
-  </blur-holder>
+  <footer>
+    <credit-box>
+      <p>website by Glydian</p>
+    </credit-box>
+    <sponsors-box>
+      <div>
+        <div>
+          <h4>Proudly sponsored by BP</h4>
+          <ul>
+            <li><a href="http://www.bp.com/en/global/corporate/careers/students-and-graduates.html">Graduate recruitment main page</a></li>
+            <li><a href="http://www.bp.com/en/global/corporate/careers/students-and-graduates/graduate-locations/united-kingdom-students-and-graduates/degree-matcher.html">Degree matcher</a></li>
+            <li><a href="http://www.bp.com/en/global/corporate/careers/students-and-graduates/graduate-locations/united-kingdom-students-and-graduates/application-process.html">Information about the graduate application process</a></li>
+            <li><a href="http://www.bp.com/en/global/corporate/careers/students-and-graduates/graduate-locations/united-kingdom-students-and-graduates/interns.html">Information on internships</a></li>
+            <li><a href="https://www.facebook.com/bpcareers">Facebook page</a></li>
+          </ul>
+        </div>
+        <a href="http://www.bp.com/"><img src="img/bp.png" alt="bp"></a>
+      </div>
+    </sponsors-box>
+  </footer>
   <script>
     for (let x of Array.from(document.getElementsByClassName("email"))) {
       x.href = "mailto:" + x.innerHTML;
     }
 
-    document.getElementsByTagName("title-box")[0].getElementsByTagName("ul")[0].addEventListener('click', function(e) {
-      e.stopPropagation();
-    });
+    const headerdiv = document.getElementsByTagName("h1")[0];
+    window.onscroll = (e) => {
+      const scrollTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
+      if (scrollTop <= 500) {
+        headerdiv.className = "hideheader";
+      } else {
+        headerdiv.className = "shrinkheader";
+      }
+    }
 
     function quickScroll() {
-      Velocity(document.getElementsByTagName('main'), "scroll", {
+      Velocity(document.getElementById('about'), "scroll", {
         duration: 400,
         easing: "ease",
-        offset: "-50px",
+        offset: "-55px",
       });
     }
 
+    let doing = true;
+    setTimeout(() => {
+      doing = false;
+    }, 2800);
+
+
+    const bubblehover = (e) => {
+      if (e !== null) e.preventDefault;
+
+      if (doing) return; // if already running animation stop
+
+      for (let bub of document.getElementsByClassName("bubbleanimation")) {
+        //        bub.classList.remove("bubbleanimation");
+        //        bub.offsetHeight;
+        //        bub.classList.add("bubbleanimation");
+        bub.style.WebkitAnimation = 'none';
+        bub.style.animation = 'none';
+      }
+
+      setTimeout(() => {
+        for (let bub of document.getElementsByClassName("bubbleanimation")) {
+          bub.style.WebkitAnimation = '';
+          bub.style.animation = '';
+        }
+      }, 100);
+
+      doing = true; // allow to run again after 3 seconds
+      setTimeout(() => {
+        doing = false;
+      }, 2800);
+
+    };
+
+    document.getElementsByClassName("newlogo")[0].addEventListener("mouseenter", bubblehover, false);
+    document.getElementsByClassName("newlogo")[1].addEventListener("mouseenter", bubblehover, false);
+
+    setInterval(() => bubblehover(null), 7000); // bubble every 7 secs
   </script>
 </body>
 
