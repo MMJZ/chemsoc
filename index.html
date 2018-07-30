@@ -29,6 +29,7 @@
 <body>
   <header>
 
+<!--
     <h1 class="hideheader">O<svg class="newlogo">
         <defs>
           <filter id="goo">
@@ -52,6 +53,7 @@
         </g>
         <text x="50%" y="99.4%" fill="#111" text-anchor="middle">U</text>
       </svg>CB</h1>
+-->
 
     <nav>
       <ul>
@@ -66,19 +68,19 @@
     <div>
       <h1>O<svg class="newlogo">
         <defs>
-          <filter id="goo2">
+          <filter id="goo">
             <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur" />
             <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
-            <feBlend in="SourceGraphic" in2="goo2" />
+            <feBlend in="SourceGraphic" in2="goo" />
           </filter>
-          <linearGradient id="g12" x1="50%" x2="50%" y1="0%" y2="100%" gradientUnits="userSpaceOnUse">
+          <linearGradient id="g1" x1="50%" x2="50%" y1="0%" y2="100%" gradientUnits="userSpaceOnUse">
             <stop offset="0%" stop-color="rgba(253, 252, 71, 0)"/>
             <stop offset="30%" stop-color="#FDFC47"/>
             <stop offset="60%" stop-color="#00f260"/>
             <stop offset="100%" stop-color="#0575e6"/>
           </linearGradient>
         </defs>
-        <g id="group" filter="url(#goo2)" fill="url(#g12)">
+        <g id="group" filter="url(#goo)" fill="url(#g1)">
           <ellipse class="bubbleanimation" cx="65%"/>
           <ellipse class="bubbleanimation" cx="35%"/> 
           <ellipse class="bubbleanimation" cx="57%"/>
@@ -158,6 +160,7 @@
 
     const headerdiv = document.getElementsByTagName("h1")[0];
     window.onscroll = (e) => {
+      return;
       const scrollTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
       if (scrollTop <= 500) {
         headerdiv.className = "hideheader";

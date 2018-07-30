@@ -147,10 +147,20 @@ event-deets>p {
 }
 
 @media only screen and (max-width: 550px) {
-  #events>li {
+  #events>li,
+  next-event>div{
     display: list-item;
     clear: both;
-/*    margin-top: 50px;*/
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  next-event>div {
+  }
+  next-event {
+    margin-top: 20px;
+  }
+  main>h2 {
+    font-size: 2em;
   }
   date-box {
     display: block;

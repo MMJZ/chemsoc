@@ -235,28 +235,20 @@ sponsors-box>.button {
 }
 
 @media only screen and (max-width: 700px) {
-  footer>content-holder {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+  about-deets {
+    margin: 5px;
+  }
+  
+  footer {
+    display: block;
+  }
+  sponsors-box img {
+    display: block;
   }
   credit-box {
-    -webkit-box-ordinal-group: 3;
-    -ms-flex-order: 2;
-    order: 2;
-    text-align: left;
+    display: none;
   }
-  sponsors-box {
-    -webkit-box-ordinal-group: 2;
-    -ms-flex-order: 1;
-    order: 1;
-    margin-bottom: 100px;
-    text-align: left;
-  }
+  
   sponsors-box li {
     padding: 5px 0;
   }
