@@ -29,7 +29,7 @@
 <body>
   <header>
 
-<!--
+    <!--
     <h1 class="hideheader">O<svg class="newlogo">
         <defs>
           <filter id="goo">
@@ -59,7 +59,7 @@
       <ul>
         <li><a href="events">Events</a></li>
         <li><a href="committee">Committee</a></li>
-<!--        <li><a href="sponsors">Sponsors</a></li>-->
+        <!--        <li><a href="sponsors">Sponsors</a></li>-->
       </ul>
     </nav>
   </header>
@@ -81,9 +81,21 @@
           </linearGradient>
         </defs>
         <g id="group" filter="url(#goo)" fill="url(#g1)">
-          <ellipse class="bubbleanimation" cx="65%"/>
-          <ellipse class="bubbleanimation" cx="35%"/> 
-          <ellipse class="bubbleanimation" cx="57%"/>
+          <ellipse class="bubbleanimation" cx="65%">
+            <animate attributeType="XML" attributeName="cy" from="75%" to="0%" dur="2.5s" repeatCount="1"/>
+            <animate attributeType="XML" attributeName="rx" from="14%" to="4%" dur="2.5s" repeatCount="1"/>
+            <animate attributeType="XML" attributeName="ry" from="7.1%" to="2%" dur="2.5s" repeatCount="1"/>
+          </ellipse>
+          <ellipse class="bubbleanimation" cx="35%"> 
+            <animate attributeType="XML" attributeName="cy" begin="0.37s" from="75%" to="0%" dur="2.5s" repeatCount="1"/>
+            <animate attributeType="XML" attributeName="rx" begin="0.37s" from="14%" to="4%" dur="2.5s" repeatCount="1"/>
+            <animate attributeType="XML" attributeName="ry" begin="0.37s" from="7.1%" to="2%" dur="2.5s" repeatCount="1"/>
+          </ellipse>
+          <ellipse class="bubbleanimation" cx="57%">
+            <animate attributeType="XML" attributeName="cy" begin="0.8s" from="75%" to="0%" dur="2.5s" repeatCount="1"/>
+            <animate attributeType="XML" attributeName="rx" begin="0.8s" from="14%" to="4%" dur="2.5s" repeatCount="1"/>
+            <animate attributeType="XML" attributeName="ry" begin="0.8s" from="7.1%" to="2%" dur="2.5s" repeatCount="1"/>
+          </ellipse>
           <rect x="15%" y="68%" width="70%" height="22%"/>
           <rect x="25%" y="85%" width="50%" height="11%"/>
         </g>
@@ -91,7 +103,7 @@
       </svg>CB</h1>
 
       <h2>Oxford University Chemistry and Biochemistry Society</h2>
-<!--            <a id="quicklink" href="#">dinner sign-up</a>-->
+      <!--            <a id="quicklink" href="#">dinner sign-up</a>-->
 
       <links-box>
         <a href="mailinglist">
@@ -100,7 +112,7 @@
         <a href="join">
           <img src="img/gr/ijoin.png">become a member
         </a>
-<!--
+        <!--
         <a href="#">
           <img src="img/gr/isponsors.png">sponsorship info
         </a>
@@ -124,7 +136,7 @@
         <h2>The New OUCB</h2>
         <p>The Oxford University Chemistry and Biochemistry Society is one of the largest societies in the University, now boasting a membership of several hundred students studying a wide range of subjects. We are dedicated to enhancing the student experience of our members, hosting a range of interesting speakers who are experts in their respective fields. We also run extremely popular socials to give a chance for students to enjoy themselves and mix with people from throughout the university.</p>
       </section>
-<!--
+      <!--
       <section>
         <h2>Advice</h2>
         <p>Something Emma's doing I think aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
@@ -176,6 +188,12 @@
         offset: "-55px",
       });
     }
+    
+    function startAnim(el){
+      for(let anim of el.getElementsByTagName("animate")){
+        anim.beginElement();
+      }
+    }
 
     let doing = true;
     setTimeout(() => {
@@ -188,19 +206,26 @@
 
       if (doing) return; // if already running animation stop
 
-      for (let bub of document.getElementsByClassName("bubbleanimation")) {
-        //        bub.classList.remove("bubbleanimation");
-        //        bub.offsetHeight;
-        //        bub.classList.add("bubbleanimation");
-        bub.style.WebkitAnimation = 'none';
-        bub.style.animation = 'none';
-      }
+      //      for (let bub of document.getElementsByClassName("bubbleanimation")) {
+      //        //        bub.classList.remove("bubbleanimation");
+      //        //        bub.offsetHeight;
+      //        //        bub.classList.add("bubbleanimation");
+      //        bub.style.WebkitAnimation = 'none';
+      //        bub.style.animation = 'none';
+      //      }
 
       setTimeout(() => {
-        for (let bub of document.getElementsByClassName("bubbleanimation")) {
-          bub.style.WebkitAnimation = '';
-          bub.style.animation = '';
-        }
+
+        
+        const els = document.getElementsByClassName("bubbleanimation");
+        startAnim(els[0]);
+        setTimeout(() => {startAnim(els[1])}, 370);
+        setTimeout(() => {startAnim(els[2])}, 800);
+
+        //        for (let bub of document.getElementsByClassName("bubbleanimation")) {
+        ////          bub.style.WebkitAnimation = '';
+        ////          bub.style.animation = '';
+        //        }
       }, 100);
 
       doing = true; // allow to run again after 3 seconds
