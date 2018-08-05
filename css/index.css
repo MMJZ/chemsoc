@@ -20,7 +20,8 @@ title-box>div {
   margin-bottom: 10vh;
   border-radius: 5px;
   text-align: center;
-  background-image: linear-gradient(to bottom, transparent 0%, transparent 23%, #eee 24%, #eee 100%);
+  background-image: linear-gradient(to bottom, transparent 0%, transparent 23%, #eee 23%, #eee 100%);
+/*  background: #eee;*/
 }
 
 title-box h1 {
