@@ -40,9 +40,21 @@
         </linearGradient>
       </defs>
       <g id="group" filter="url(#goo)" fill="url(#g1)">
-        <ellipse class="bubbleanimation" cx="65%"/>
-        <ellipse class="bubbleanimation" cx="35%"/> 
-        <ellipse class="bubbleanimation" cx="57%"/>
+          <ellipse class="bubbleanimation" cx="65%">
+            <animate attributeType="XML" attributeName="cy" from="75%" to="0%" dur="2.5s" repeatCount="1"/>
+            <animate attributeType="XML" attributeName="rx" from="14%" to="4%" dur="2.5s" repeatCount="1"/>
+            <animate attributeType="XML" attributeName="ry" from="7.1%" to="2%" dur="2.5s" repeatCount="1"/>
+          </ellipse>
+          <ellipse class="bubbleanimation" cx="35%"> 
+            <animate attributeType="XML" attributeName="cy" begin="0.37s" from="75%" to="0%" dur="2.5s" repeatCount="1"/>
+            <animate attributeType="XML" attributeName="rx" begin="0.37s" from="14%" to="4%" dur="2.5s" repeatCount="1"/>
+            <animate attributeType="XML" attributeName="ry" begin="0.37s" from="7.1%" to="2%" dur="2.5s" repeatCount="1"/>
+          </ellipse>
+          <ellipse class="bubbleanimation" cx="57%">
+            <animate attributeType="XML" attributeName="cy" begin="0.8s" from="75%" to="0%" dur="2.5s" repeatCount="1"/>
+            <animate attributeType="XML" attributeName="rx" begin="0.8s" from="14%" to="4%" dur="2.5s" repeatCount="1"/>
+            <animate attributeType="XML" attributeName="ry" begin="0.8s" from="7.1%" to="2%" dur="2.5s" repeatCount="1"/>
+          </ellipse>
         <rect x="15%" y="68%" width="70%" height="22%"/>
         <rect x="25%" y="85%" width="50%" height="11%"/>
       </g>
