@@ -166,30 +166,32 @@
         headerdiv.className = "shrinkheader";
       }
     }
-
-    document.getElementsByClassName("newlogo")[0].addEventListener("mouseenter", (e) => {
-      e.preventDefault;
-
-      if (doing) return; // if already running animation stop
-
-      for (let bub of document.getElementsByClassName("bubbleanimation")) {
-        bub.style.WebkitAnimation = 'none';
-        bub.style.animation = 'none';
+    
+    function startAnim(el){
+      for(let anim of el.getElementsByTagName("animate")){
+        anim.beginElement();
       }
+    }
 
+    function bubblehover(e){
+      if (e !== null) e.preventDefault;
+      if (doing) return;
       setTimeout(() => {
-        for (let bub of document.getElementsByClassName("bubbleanimation")) {
-          bub.style.WebkitAnimation = '';
-          bub.style.animation = '';
-        }
+        const els = document.getElementsByClassName("bubbleanimation");
+        startAnim(els[0]);
+        setTimeout(() => {startAnim(els[1])}, 370);
+        setTimeout(() => {startAnim(els[2])}, 800);
       }, 100);
 
       doing = true; // allow to run again after 3 seconds
       setTimeout(() => {
         doing = false;
       }, 2800);
+    };
 
-    }, false);
+    document.getElementsByClassName("newlogo")[0].addEventListener("mouseenter", bubblehover, false);
+
+    setInterval(() => {bubblehover(null)}, 7000); // bubble every 7 secs
   </script>
 </body>
 

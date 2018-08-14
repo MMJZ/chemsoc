@@ -16,7 +16,7 @@
   <!--  <link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700" rel="stylesheet">-->
   <link href="https://fonts.googleapis.com/css?family=Nunito:300,700|Raleway" rel="stylesheet">
 
-  <meta name="description" content="For Oxford Chemsoc">
+  <meta name="description" content="OUCB: Oxford University Chemistry and Biochemistry Society">
   <meta name="keywords" content="oxford,chemistry,society,university,student,chemsoc,oucs">
   <meta name="author" content="Michael Agius">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,42 +27,19 @@
 </head>
 
 <body>
+<!--
   <header>
 
-    <!--
-    <h1 class="hideheader">O<svg class="newlogo">
-        <defs>
-          <filter id="goo">
-            <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur" />
-            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
-            <feBlend in="SourceGraphic" in2="goo" />
-          </filter>
-          <linearGradient id="g1" x1="50%" x2="50%" y1="0%" y2="100%" gradientUnits="userSpaceOnUse">
-            <stop offset="0%" stop-color="rgba(253, 252, 71, 0)"/>
-            <stop offset="30%" stop-color="#FDFC47"/>
-            <stop offset="60%" stop-color="#00f260"/>
-            <stop offset="100%" stop-color="#0575e6"/>
-          </linearGradient>
-        </defs>
-        <g id="group" filter="url(#goo)" fill="url(#g1)">
-          <ellipse class="bubbleanimation" cx="65%"/>
-          <ellipse class="bubbleanimation" cx="35%"/> 
-          <ellipse class="bubbleanimation" cx="57%"/>
-          <rect x="15%" y="68%" width="70%" height="22%"/>
-          <rect x="25%" y="85%" width="50%" height="11%"/>
-        </g>
-        <text x="50%" y="99.4%" fill="#111" text-anchor="middle">U</text>
-      </svg>CB</h1>
--->
 
     <nav>
       <ul>
         <li><a href="events">Events</a></li>
         <li><a href="committee">Committee</a></li>
-        <!--        <li><a href="sponsors">Sponsors</a></li>-->
+                <li><a href="sponsors">Sponsors</a></li>
       </ul>
     </nav>
   </header>
+-->
 
   <title-box onclick="quickScroll()">
     <div>
@@ -96,8 +73,10 @@
             <animate attributeType="XML" attributeName="rx" begin="0.8s" from="14%" to="4%" dur="2.5s" repeatCount="1"/>
             <animate attributeType="XML" attributeName="ry" begin="0.8s" from="7.1%" to="2%" dur="2.5s" repeatCount="1"/>
           </ellipse>
-          <rect x="15%" y="68%" width="70%" height="22%"/>
-          <rect x="25%" y="85%" width="50%" height="11%"/>
+          <rect x="16%" y="68%" width="70%" height="20%"/>
+          <rect x="20%" y="87%" width="62%" height="4%"/>
+          <rect x="24%" y="90%" width="54%" height="4%"/>
+          <rect x="30%" y="93%" width="40%" height="4%"/>
         </g>
         <text x="50%" y="99.4%" fill="#111" text-anchor="middle">U</text>
       </svg>CB</h1>
@@ -120,9 +99,11 @@
         <a href="events">
           <img src="img/gr/ievents.png">see our events
         </a>
-        <a href="https://facebook.com/OxfordChemistrySociety/">
-          <img src="img/gr/iabout.png">like us on facebook
+        
+        <a href="committee">
+          <img src="img/gr/iabout.png">see the committee
         </a>
+        
       </links-box>
     </div>
 
@@ -135,6 +116,11 @@
       <section>
         <h2>The New OUCB</h2>
         <p>The Oxford University Chemistry and Biochemistry Society is one of the largest societies in the University, now boasting a membership of several hundred students studying a wide range of subjects. We are dedicated to enhancing the student experience of our members, hosting a range of interesting speakers who are experts in their respective fields. We also run extremely popular socials to give a chance for students to enjoy themselves and mix with people from throughout the university.</p>
+        
+        
+        <a class="afacebook" target="_blank" href="https://www.facebook.com/ouchemsoc">Like us on Facebook</a>
+        <a class="atwitter" target="_blank" href="https://twitter.com/ouchemsoc">Follow us on Twitter</a>
+        
       </section>
       <!--
       <section>
@@ -201,44 +187,25 @@
     }, 2800);
 
 
-    const bubblehover = (e) => {
+    function bubblehover(e){
       if (e !== null) e.preventDefault;
-
-      if (doing) return; // if already running animation stop
-
-      //      for (let bub of document.getElementsByClassName("bubbleanimation")) {
-      //        //        bub.classList.remove("bubbleanimation");
-      //        //        bub.offsetHeight;
-      //        //        bub.classList.add("bubbleanimation");
-      //        bub.style.WebkitAnimation = 'none';
-      //        bub.style.animation = 'none';
-      //      }
-
+      if (doing) return;
       setTimeout(() => {
-
-        
         const els = document.getElementsByClassName("bubbleanimation");
         startAnim(els[0]);
         setTimeout(() => {startAnim(els[1])}, 370);
         setTimeout(() => {startAnim(els[2])}, 800);
-
-        //        for (let bub of document.getElementsByClassName("bubbleanimation")) {
-        ////          bub.style.WebkitAnimation = '';
-        ////          bub.style.animation = '';
-        //        }
       }, 100);
 
       doing = true; // allow to run again after 3 seconds
       setTimeout(() => {
         doing = false;
       }, 2800);
-
     };
 
     document.getElementsByClassName("newlogo")[0].addEventListener("mouseenter", bubblehover, false);
-    document.getElementsByClassName("newlogo")[1].addEventListener("mouseenter", bubblehover, false);
 
-    setInterval(() => bubblehover(null), 7000); // bubble every 7 secs
+    setInterval(() => {bubblehover(null)}, 7000); // bubble every 7 secs
   </script>
 </body>
 

@@ -11,8 +11,6 @@ body {
   background-color: #eee;
   
   
-
-  
   
   display: flex;
   flex-direction: column;
@@ -264,7 +262,7 @@ main {
   margin: 0 auto;
   padding: 150px 20px 20px 20px;
   max-width: 1100px;
-  width: calc(100% - 20px);
+  width: calc(100% - 4px);
   background: #eee;
 }
 
@@ -283,7 +281,8 @@ footer {
     text-align: center;
   }
   main {
-    padding-top: 20px;
+    padding: 20px 5px;
+    margin: 0 2px;
   }
 }
 
