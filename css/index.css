@@ -1,7 +1,7 @@
 body {
   background-image: url(../img/parpat2.png);
   background-size: 200px;
-  background-repeat: space;  
+  background-repeat: repeat;  
   background-attachment: fixed;
 }
 
