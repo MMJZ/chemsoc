@@ -1,11 +1,42 @@
-title-box {
-  min-height: 50vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+body {
+  background-image: url(../img/parpat2.png);
+  background-size: 200px;
+  background-color: #777;
 }
 
-title-box h1 {
-  font-size: 6em;
-  font-weight: 300;
+main {
+  font-weight: 400;
+  padding: 0;
+  margin-top: 200px;
+  background: #777;
+  box-shadow: 0 0 30px 30px #777;
+  color: #eee;
+  border-radius: 50px;
+  max-width: 900px;
+}
+
+sponsors-ad {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 1.2em;
+  padding: 0 30px;
+}
+
+sponsors-ad>p {
+  margin: 30px 0;
+}
+
+sponsors-ad>p>a {
+  color: rgb(150,212,255);
+  transition: all 0.2s ease-in-out;
+  border-bottom: 1px solid transparent;
+}
+
+sponsors-ad>p>a:hover {
+  border-bottom: 1px solid rgb(150,212,255);
+}
+
+footer {
+  border-top: 1px solid #eee;
 }
