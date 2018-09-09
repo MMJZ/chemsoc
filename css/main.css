@@ -97,9 +97,9 @@ header>h1 {
 }
 
 nav {
-  margin-left: 20px;
+  margin-left: 10px;
   margin-top: 10px;
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 
 nav:first-child {
@@ -108,7 +108,7 @@ nav:first-child {
 
 nav>ul>li {
   display: inline-block;
-  margin: 0 25px;
+  margin: 0 10px;
   border-bottom: 1px solid transparent;
   transition: all 0.2s ease-in-out;
 }
@@ -119,7 +119,7 @@ nav>ul>li:hover {
 
 .navcurpage {
   font-weight: 700;
-  font-size: 1.2em;
+  font-size: 1.1em;
 }
 
 .navcurpage>a {

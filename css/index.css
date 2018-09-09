@@ -79,7 +79,7 @@ links-box {
 links-box>a {
   display: inline-block;
   margin: 10px 2px;
-  font-size: 1.2em;
+  font-size: 1.1em;
   font-family: 'Nunito', sans-serif;
   text-align: center;
   font-weight: 300;
@@ -95,7 +95,7 @@ links-box>a:hover {
 }
 
 links-box>a>img {
-  height: 50px;
+  height: 40px;
   display: block;
   margin: 0 auto 10px auto;
 /*  filter: brightness(0) invert(1);*/

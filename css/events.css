@@ -7,19 +7,14 @@ header {
 /*  display: none;*/
 }
 
-next-event {
+highlight-event {
   margin-top: 150px;
-/*  background: #778;*/
   background-image: url(../img/parpat2.png);
   background-color: #555;
   background-size: 150px;
   background-position: center;
-/*  box-shadow: 0 0px 2px rgba(0,0,0,0.4);*/
-  
   box-shadow: 0 0 10px 10px #555 inset;
-
-  
-/*  display: none;*/
+  text-align: center;
 }
 
 
@@ -31,14 +26,22 @@ main {
   display: block;
 }
 
-next-event>h2 {
+highlight-event>h2 {
   margin: 40px 0;
   font-size: 2em;
   text-align: center;
   color: white;
+  
+  background-color: #555;
+  box-shadow: 0 0 2px 2px #555;
+  text-shadow: 0 0 5px #555;
+  
+  display: inline-block;
+  
+  
 }
 
-next-event>div {
+highlight-event>div {
   max-width: 1100px;
   margin: 40px auto;
 }
@@ -49,7 +52,7 @@ main>h2 {
   
 /*  display: none;*/
   
-  font-size: 3em;
+  font-size: 2em;
   margin-bottom: 50px;
   text-align: center;
   
@@ -64,7 +67,7 @@ main {
 }
 
 #events>li,
-next-event>div {
+highlight-event>div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -74,6 +77,7 @@ next-event>div {
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
+  text-align: left;
   
 }
 
