@@ -138,7 +138,7 @@ about-deets>section {
 /*  margin: 10px;*/
   margin: 30px 0;
   max-width: 1100px;
-  
+  overflow: auto;
 }
 
 /*
@@ -168,6 +168,17 @@ about-deets>section>h2>img {
     line-height: 1.7em;
     font-size: 1em;
   }
+}
+
+about-deets>section>img {
+  max-height: 300px;
+  float: left;
+  padding: 10px;
+}
+
+about-deets>section>a::after {
+  display: block;
+  clear: both;
 }
 
 about-deets>section>a {
@@ -203,6 +214,10 @@ about-deets>section>a:active {
 
 .atwitter:hover {
   background: rgba(0, 172, 237, 0.9);
+}
+
+.astash {
+  background: rgb(94, 118, 132);
 }
 
 

@@ -1,0 +1,28 @@
+main {
+/*  display: flex;*/
+/*  align-items: center;*/
+/*  justify-content: center;*/
+}
+
+stash-box {
+  
+}
+
+stash-box>img {
+  float: left;
+  clear: left;
+  max-width: 300px;
+  padding: 5px;
+  border-radius: 2px;
+  margin: 0 20px 20px 0;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+}
+
+stash-box>p {
+  margin-bottom: 30px;
+}
+
+stash-box>p>a {
+  color: rgb(100,200,255);
+  text-decoration: underline;
+}
