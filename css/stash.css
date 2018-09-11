@@ -26,3 +26,11 @@ stash-box>p>a {
   color: rgb(100,200,255);
   text-decoration: underline;
 }
+
+@media only screen and (max-width: 800px){
+  stash-box>img {
+    display: block;
+    float: none;
+    margin: 10px auto;
+  }
+}
