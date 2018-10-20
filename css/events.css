@@ -117,6 +117,10 @@ event-deets {
   
 }
 
+highlight-event event-deets {
+  background: rgb(180, 215, 237);
+}
+
 event-deets>h3::before {
   content: "SPEAKER";
   display: block;
