@@ -246,7 +246,10 @@ credit-box {
 }
 
 sponsors-box {
-  text-align: right;
+/*  text-align: right;*/
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
 sponsors-box>div {
@@ -298,6 +301,17 @@ sponsors-box img {
   margin-left: 20px;
 }
 
+#pglogo {
+/*  display: flex;*/
+  height: 100%;
+/*  background: red;*/
+  margin-right: 20px;
+}
+
+#pglogo>img {
+  height: 150px;
+}
+
 sponsors-box>.button {
   display: inline-block;
 }
@@ -311,7 +325,7 @@ sponsors-box>.button {
     display: block;
   }
   sponsors-box img {
-    display: block;
+    display: inline-block;
   }
   credit-box {
     display: none;
@@ -328,5 +342,9 @@ sponsors-box>.button {
   }
   sponsors-box img {
     height: 120px;
+  }
+  
+  #pglogo>img {
+    height: 90px;
   }
 }
