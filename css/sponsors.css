@@ -15,6 +15,7 @@ main {
   max-width: 900px;
 }
 
+/*
 sponsors-ad {
   display: block;
   width: 100%;
@@ -36,7 +37,42 @@ sponsors-ad>p>a {
 sponsors-ad>p>a:hover {
   border-bottom: 1px solid rgb(150,212,255);
 }
+*/
+
+sponsor-info {
+  clear: both;
+  display: block;
+  border: 1px solid white;
+  color: black;
+  background: linear-gradient(to right, white, rgba(255,255,255,0.7));
+  padding: 10px;
+  border-radius: 5px;
+  margin: 20px 0;
+}
+
+sponsor-info>img {
+  float: left;
+  height: 10em;
+  margin-right: 20px;
+}
 
 footer {
   border-top: 1px solid #eee;
+}
+
+main {
+  padding-bottom: 50px;
+}
+
+main a {
+  text-decoration: underline;
+  color: rgb(80,160,204);
+}
+
+main>p>a {
+  color: rgb(100,200,255);
+}
+
+main h2 {
+  margin-top: 80px;
 }
