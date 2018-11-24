@@ -55,9 +55,28 @@ sponsor-info {
 }
 
 sponsor-info>img {
-  float: left;
   width: 10em;
   margin-right: 20px;
+}
+
+@media only screen and (max-width: 800px) {
+  h2,
+  main>p {
+    margin: 0 10px;
+  }
+  
+  sponsor-info {
+    display: block;
+    margin: 20px 2px;
+  }
+  sponsor-info>img {
+    display: block;
+    margin: 20px auto;
+    max-height: 10em;
+    max-width: 80%;
+    width: auto;
+    float: none;
+  }
 }
 
 footer {
